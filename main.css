@@ -1,0 +1,280 @@
+
+/*------------------------------------*/
+/*       Mise en forme Responsive     */
+/*------------------------------------*/	
+body {											/* Application à tous les éléments contenus dans la page */
+	 
+	box-sizing: border-box;
+	/* Inclusion du border et du padding pour le calcul de la largeur */
+}
+
+body {
+	display: flex;
+	/* Conteneur Flex pour Header, Section et Footer */
+	flex-direction: column;
+	/* Orientation de l'affichage : vertical */
+	min-height: 100vh;
+	/* Etirement des éléments sur toute la hauteur de la fenêtre */
+}
+
+header {
+	display: flex;
+	/* Conteneur Flex pour header */
+	flex-direction: column;
+	/* Orientation de l'affichage : vertical */
+}
+
+#entete, #art-news, #art-blocs,section,
+footer {
+	display: flex;
+	/* Conteneur Flex pour #entete, #art-news, art-blocs, section et footer */
+	flex-direction: row;
+	justify-content: flex-end;
+	/* Orientation de l'affichage : horizontal */
+}
+
+#entete{					/* #entete */
+	align-items: center;
+	/* alignement vertival des blocs */
+}
+#titre{
+	flex-grow: 1;
+}
+
+#art-news{					/* #art-news */
+	justify-content: space-around;
+	/* alignement horizontal des blocs */
+	flex-wrap: wrap;
+	/* Passage à la ligne des flex-items autorisé */
+}
+
+art-blocs{					/* #art-blocs */
+	justify-content: flex-end;
+	/* alignement horizontal des blocs */
+	flex-wrap: wrap-reverse;
+	/* Passage à la ligne des flex-items autorisé mais inversé */
+}
+
+												/* titre */
+aside {
+	flex-grow: 1;
+	/* Etirement possible pour compléter l'espace */
+}
+
+article {
+	align-content: space-around;
+}
+
+article {
+	flex-grow: 4;
+	/* Etirement dans la largeur pour compléter l'espace 3/4 (1/4 pour aside) car flex-direction: row */
+}
+
+#contact{					/* #contact */
+	flex: 0 1 20em;
+	/* Regroupement de flex-grow, flex shrink (1 seul pour contact contre 4 pour illustration) et flex-basis */
+}
+
+#illustration{					/* #illustration */
+	flex: 1 4 20em;
+	/* Regroupement de flex-grow, flex shrink (4 pour illustration pour 1 seul pour contact) et flex-basis */
+}
+
+											/* .logo */
+nav,
+aside {
+	flex-basis: 10em;
+	/* Largeur de base */
+}
+
+.news{			/* .news */
+	flex-basis: 15em;
+	/* Largeur de base */
+}
+.bloc{				/* .bloc */ 
+	flex-basis: 5em;
+	/* Largeur de base */
+}
+/*------------------------------------*/
+/*           Mise en page             */
+/*------------------------------------*/
+/*               Marges               */
+
+body {
+	margin: 0;
+	padding: 1em;
+	background: #000;
+	font-family: "Trebuchet MS", arial, sans-serif;
+}
+
+header,#banniere, .logo, #titre,
+nav,
+li,
+aside,#cal ,.pub
+article,
+.news, #poster,.bloc,
+footer,
+#contact,
+#illustration
+{
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 8px;
+}
+/*               Coloris              */
+
+header,
+footer,
+.news, .bloc, #poster
+{
+	background-color: #466dd7;
+}
+
+nav,
+aside {
+	background-color: #47b9d7;
+}
+
+#banniere,.logo, #titre,
+article,.pub, #cal,
+nav li, #liens, #contact, #illustration,
+li {
+	background-color: #52f7ee;
+}
+/*              Dimensions            */
+
+header,
+section,
+footer {
+	min-width: 43em;
+}
+
+article {
+	flex-basis: 25em;
+}
+
+nav,
+aside {
+	flex-basis: 8em;
+}
+
+.news	{				/* .news */
+	flex-basis: 15em;
+}
+
+{						/* liste */
+						
+/* Image d'arabesque avant et après la liste */
+}
+
+/*           Gestion du menu          */
+li {
+	display: block;
+	list-style: none;
+	margin-left: -2em;
+	flex-basis: 6em;
+	height: 2em;
+	
+/* Ombre bleue sur chaque élément du menu */
+}
+
+					{						/* Liens du menu */
+
+/* Pas de soulignement */
+}
+
+.menu:hover			{								/* Eléments du menu survolés */		
+	background-color: #466dd7;	
+	box-shadow: 3px 3px 2px 2px #52f7ee;
+}
+
+			{								/* Liens des éléments du menu survolés */
+	color: #fff;
+}
+
+.logo,.news{				/* .bloc */
+	height: 6em;
+}
+
+#poster,.pub, #cal{
+	height: 10em;
+}
+
+/*                Aspect news             */
+p {
+	margin: 0;
+}
+.news{		/* .news */
+	font-size: 1em;
+	float: left;
+	padding: auto;
+	
+}
+
+															/* Aspect poster */
+
+.pub{
+	border-radius: 8px;
+	padding: 5px;
+}
+/*                Aspect blocs            */
+															/* .blocs */
+
+.blocs{
+	background-color: rgba(0, 0, 230, .2);
+}
+
+/*              Aspect bloc tableau            */	
+#cal{									/* #cal */
+	background-color: #fff;
+}
+
+table {	
+	margin: 0.5em auto;
+	font-size: 0.7em;
+}
+
+thead, tfoot {
+	background-color: #bbb;
+}
+
+						{									/* Lignes impaires */
+
+}
+
+						{									/* Lignes aires */
+
+}
+
+td, th {
+	border: 1px solid #000;
+	text-align: center;
+	width: 5em;
+}
+
+							{								/* 2ème cellule du tableau */
+
+}
+
+		{													/* Cellules du tableau à texte blanc */
+	color: #fff;
+}
+
+/*               Numérotation              */		
+
+body {
+
+		/* Initialisation du compteur */
+	}
+#poster{
+	background-image: url('images/ile.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+	
+		 {
+						
+		/* Incrémentation et affichage du compteur */
+	}

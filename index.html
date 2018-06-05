@@ -1,22 +1,94 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Les objets connectés</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+	<meta charset="utf-8" />
+	<title>Structure Flex</title>
+	<meta name="description" content="Exemple de structure réalisée à l'aide des blocs flexibles" />
+	<meta name="keywords" content="flex, flex-direction, flex-wrap, flex-grow, flex-basis" />
+	<!-- Styles CSS -->
+	<link href='main.css' rel='stylesheet' >
 </head>
 
 <body>
-	<a href="take.html">to take</a>
-	<p data-height="265" data-theme-id="dark" data-slug-hash="ZRbBrv" data-default-tab="html,result" data-user="2maj" data-embed-version="2" data-pen-title="Wild Circus template" class="codepen">See the Pen <a href="https://codepen.io/2maj/pen/ZRbBrv/">Wild Circus template</a> by Moussa (<a href="https://codepen.io/2maj">@2maj</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-	</body>
+	<!-- En-tête -->
+	<header>
+		<div id="banniere">Bannière</div>
+		<div id="entete">
+			<div class="logo">Logo1</div>
+			<div id="titre">Titre</div>
+			<div class="logo">Logo2</div>
+		</div>
+	</header>
+	<!-- Corps de la page -->
+	<section>
+		<nav class='menu'>Menu
+			<ul>
+				<li><a href="#">Liens1</a></li>
+				<li><a href="#">Liens2</a></li>
+				<li><a href="#">Liens3</a></li>
+				<li><a href="#">Liens4</a></li>
+				<li><a href="#">Liens5</a></li>
+				<li><a href="#">Liens6</a></li>
+			</ul>
+		</nav>
+		<article>
+			<div id="art-news">
+				<div class="news"><p>Tout ce que vous avez toujours voulu savoir sur le CSS sans jamais oser le demander</p></div>
+				<div class="news"><p>News</p></div>
+				<div class="news"><p>News</p></div>
+			</div>
+			<div id="poster">Poster</div>
+			<div id="art-blocs">
+				<div class="bloc"><h6>Bloc1</h6></div>
+				<div class="bloc"><h6>Bloc2</h6></div>
+				<div class="bloc"><h6>Bloc3</h6></div>
+				<div class="bloc"><h6>Bloc4</h6></div>
+			</div>
+		</article>
+		<aside>
+			<div class="pub">Publicité1</div>
+			<div id="cal">
+				<table>
+						<tr>
+							<th colspan="2">Calendrier</th>
+						</tr>
+						<tr>
+							<th>Sem.</th>
+							<th>Heures</th>
+						</tr>
+						<tr>
+							<th colspan="2">Total : 64h</th>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>20h</td>
+						</tr>
+						<tr>
+							<td>42</td>
+							<td>23h</td>
+						</tr>
+						<tr>
+							<td>43</td>
+							<td>21h</td>
+						</tr>
+						<tr>
+							<td>44</td>
+							<td>17h</td>
+						</tr>
+				</table>
+			</div>
+			<div class="pub">Publicité2</div>
+		</aside>
+	</section>
+	<!-- Pied de page -->
+	<footer>
+		<div id="contact">Nom Prénom
+			<br /> Adresse
+			<br /> Code Postal Ville
+			<br /> Adresse email </div>
+		<div id="illustration">Illustration</div>
+	</footer>
+</body>
 
 </html>
